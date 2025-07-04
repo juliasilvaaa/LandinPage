@@ -1,0 +1,80 @@
+body {
+    background-color: green;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: relative; /* Adicionado para dxar o botao fico ao centro do card*/
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 80vh;
+    border-radius: 20px;
+}
+
+/* Botão centralizado no meio do card */
+#card-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+
+.inputs {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs input {
+    background-color: none;
+    border: 2px solid black;
+    width: 100%;
+    height: 10vh;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/* Adicionando images ao input */
+.input-icon-usd {
+    background-image: url('./assets/img/usa-flag.png');
+    background-position: calc(100% - 10px) center;
+    background-repeat: no-repeat;
+    background-size: 10%;
+}
+
+.input-icon-br {
+    background-image: url('./assets/img/brazil-flag.png');
+    background-position: calc(100% - 10px) center;
+    background-repeat: no-repeat;
+    background-size: 10%;
+}
+
+
+@media (max-width: 1024px) {
+    main {
+        height: 60vh;
+    }
+
+    .card {
+        width: 80%;
+        height: 100%;
+
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contador de Cliques</title>
+</head>
+
+<body class="h-screen w-screen bg-black flex flex-col justify-center items-center">
+
+    <div class="flex w-full h-full justify-center items-center gap-10">
+
+        <div class="bg-white w-[20%] h-[80%] flex justify-around flex-col items-center rounded-xl">
+            <h1 class="text-2xl">Contador de Cliques</h1>
+
+            <div class="flex flex-col items-center gap-5 h-50">
+                <div class="bg-gray-100 rounded-md flex justify-center items-center h-20 w-full">
+                    <h1 id="cliques">Cliques:</h1>
+                </div>
+
+
+                <div class="flex gap-10 w-[100%]">
+                    <button id="clicar" class="bg-red-300 rounded-md h-10 w-20 cursor-pointer">Clicar</button>
+
+                    <button id="zerar" class="bg-gray-300 rounded-md h-10 w-20 cursor-pointer">Zerar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white w-[20%] h-[80%] flex justify-around flex-col items-center rounded-xl">
+            <h1 class="text-2xl">Contador de Caracteres</h1>
+
+            <div class="flex flex-col items-center gap-5 h-50">
+                <div class="bg-gray-100 rounded-md flex justify-center items-center h-20 w-full">
+                    <h1 id="quantidade">Caracteres:</h1>
+                </div>
+
+
+                <div class="flex flex-col gap-2 w-[100%]">
+                    <input id="input-caracter" class="border-2 border-black rounded-md w-full" placeholder="Digite"
+                        type="text">
+
+                    <button onclick="ContadorCaracteres()" class="w-full bg-black text-white rounded-md">Enviar</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Verificar Par ou Ímpar -->
+
+        <div class="bg-white w-[20%] h-[80%] flex justify-around flex-col items-center rounded-xl">
+            <h1 class="text-2xl">Par ou Ímpar</h1>
+
+            <div class="flex flex-col items-center gap-5 h-50">
+                <div class="bg-gray-100 rounded-md flex justify-center items-center h-20 w-full">
+                    <h1 id="resultado">Resultado:</h1>
+                </div>
+
+
+                <div class="flex flex-col gap-2 w-[100%]">
+                    <input id="input-number" class="border-2 border-black rounded-md w-full" placeholder="Digite"
+                        type="number">
+
+                    <button onclick="VerificarResultado()" class="w-full bg-black text-white rounded-md">Enviar</button>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Mudar cor do fundo usando js -->
+    <div class="flex text-white gap-10 p-2">
+
+        <button id="red" class="bg-red-600 border-2 border-white h-10 w-20 rounded-md">RED</button>
+
+        <button id="green" class="bg-green-300 border-2 border-white h-10 w-20 rounded-md">Green</button>
+
+        <button id="yellow" class="bg-yellow-500 border-2 border-white h-10 w-20 rounded-md">Yellow</button>
+
+        <button id="black" class="bg-black border-2 border-white h-10 w-20 rounded-md">Black</button>
+
+        <button 
+        class="bg-black border-2 border-white h-10 w-40 rounded-md"><a href="./tarefas.html">Ver Tarefas</a></button>
+    </div>
+
+    <script src="../javascript/assets/contador.js"></script>
+</body>
+
+</html>

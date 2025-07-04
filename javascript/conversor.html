@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+
+    <title>Conversor</title>
+</head>
+
+<body>
+
+    <header class="flex flex-col justify-center items-center h-20">
+        <h1 class="text-2xl text-white font-bold">Conversor de Moedas</h1>
+    </header>
+
+    <main>
+        <div class="card">
+            <div class="inputs" id="inputs-container">
+
+
+                <div id="input-original">
+                    <h1
+                    id="text-initial"
+                    >Valor</h1>
+                    <input class="input-icon-usd" id="usd" placeholder="USD" type="text">
+                </div>
+
+                <div 
+                id="button-convert"
+                class="">
+                    <button onclick="trocarInputs()" id="card-img" 
+                    class="bg-green-300 rounded-full h-8 w-8 flex 
+                        justify-center items-center">
+                        <img class="h-4 w-4" src="./assets/img/trocar.png" alt="">
+                    </button>
+                </div>
+
+                <div id="input-convertido">
+                    <h1
+                    id="text-convert"
+                    >Valor convertido:</h1>
+                    <input class="input-icon-br" id="brl" placeholder="R$" type="text">
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="../javascript/assets/conversor.js"></script>
+</body>
+
+</html>
